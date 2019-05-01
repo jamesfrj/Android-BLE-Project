@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Dispenser Helper</string>
+    <!--Splash Activity-->
+    <string name="splash_title1">Automatic</string>
+    <string name="splash_title2">Toothpaste</string>
+    <string name="splash_title3">Dispenser</string>
+    <string name="splash_subtitle">Proudly Presented By</string>
+    <string name="splash_author1">Renjie Fan</string>
+    <string name="splash_author2">Yanbo Chen</string>
+    <string name="splash_author3">Haoyu Tian</string>
+    <!--Main Activity-->
+    <string name="Button1_name">Mange User</string>
+    <string name="Button2_name">Refill Toothpaste</string>
+    <string name="Button3_name">Historical Data</string>
+    <string name="Button4_name">User Guide</string>
+    <!--Manage User Activity-->
+    <string name="manageUser_u_id">User ID</string>
+    <string name="manageUser_u_name">User Name</string>
+    <string name="manageUser_tAmount">Toothpaste Amount</string>
+    <string name="manageUser_u1">User 1</string>
+    <string name="manageUser_u2">User 2</string>
+    <string name="manageUser_u3">User 3</string>
+    <string name="manageUser_hint1">(optional)</string>
+    <string name="manageUser_amount_high">High</string>
+    <string name="manageUser_amount_low">Low</string>
+    <string name="manageUser_button">Save</string>
+    <!--Refill Toothpaste Activity-->
+    <string name="refill_toothpaste_refill">Refill</string>
+    <!--History Data Activity-->
+    <string name="history_data_u_id">User ID</string>
+    <string name="history_data_amount">Amount</string>
+    <string name="history_data_time">Times of Dispensing</string>
+    <string name="history_data_u1">User 1</string>
+    <string name="history_data_u2">User 2</string>
+    <string name="history_data_u3">User 3</string>
+    <string name="history_data_highAmount">0.50 mL</string>
+    <string name="history_data_lowAmount">0.25 mL</string>
+    <string name="history_data_update_data">Update Data</string>
+    <string name="history_data_clear_data">Clear Data</string>
+    <string name="history_data_all">All</string>
+</resources>

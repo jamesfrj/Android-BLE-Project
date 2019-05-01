@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageUserActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toTopOf="@+id/button_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/manageUser_u_id"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/manageUser_u_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/manageUser_tAmount"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:text="@string/manageUser_u1" />
+
+            <EditText
+                android:id="@+id/edittext_u1_name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:hint="@string/manageUser_hint1"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:id="@+id/u1_rb_group"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/u1_rb_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_high" />
+
+                <RadioButton
+                    android:id="@+id/u1_rb_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_low" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:text="@string/manageUser_u2" />
+
+            <EditText
+                android:id="@+id/edittext_u2_name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:hint="@string/manageUser_hint1"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:id="@+id/u2_rb_group"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/u2_rb_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_high" />
+
+                <RadioButton
+                    android:id="@+id/u2_rb_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_low" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:text="@string/manageUser_u3" />
+
+            <EditText
+                android:id="@+id/edittext_u3_name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="1"
+                android:hint="@string/manageUser_hint1"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:id="@+id/u3_rb_group"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/u3_rb_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_high" />
+
+                <RadioButton
+                    android:id="@+id/u3_rb_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/manageUser_amount_low" />
+            </RadioGroup>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="InitiateBle"
+        android:text="@string/manageUser_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoricalDataActivity">
+
+    <TableLayout
+        android:id="@+id/dataTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u_id"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_time"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_highAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u1high"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_lowAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u1low"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_highAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u2high"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_lowAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u2low"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_highAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u3high"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_lowAmount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u3low"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_all"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u1all"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_all"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u2all"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_u3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/history_data_all"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u3all"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="InitiateBle"
+        android:text="@string/history_data_update_data"
+        app:layout_constraintBottom_toTopOf="@+id/button_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="ClearData"
+        android:text="@string/history_data_clear_data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
